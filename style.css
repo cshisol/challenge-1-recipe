@@ -76,6 +76,136 @@ h6 {
 
 /* --- Page Styles --- */
 
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
 body {
   font-family: "Outfit", "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--stone-900);
+  background-color: var(--stone-100);
+}
+
+.width-container {
+  max-width: 768px;
+  background-color: var(--white);
+}
+
+.omlette-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.text-content {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.intro_heading {
+  font-family: "Young-Serif", "Segoe UI", "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.intro_description {
+  margin-bottom: 1rem;
+}
+
+.preparation {
+  padding: 1rem;
+  background-color: var(--rose-50);
+  border-radius: 10px;
+}
+
+.preparation_heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--rose-800);
+}
+
+.preparation_list {
+  padding-left: 1.5rem;
+}
+
+.preparation_list-item {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.preparation_list-item::marker {
+  color: var(--rose-800);
+}
+
+.preparation_list-item-category,
+.instructions_list-item-summary {
+  font-weight: 600;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+  margin-block: 2rem;
+}
+
+.ingredients_heading,
+.instructions_heading,
+.nutrition_heading {
+  margin-bottom: 1rem;
+  font-family: "Young-Serif", "Segoe UI", "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 500;
+  color: var(--brown-800);
+}
+
+.ingredients_list,
+.instructions_list {
+  padding-left: 1.5rem;
+}
+
+.ingredients_list-item,
+.instructions_list-item {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ingredients_list-item::marker,
+.instructions_list-item::marker {
+  font-weight: 700;
+  color: var(--brown-800);
+}
+
+.horizontal-divider {
+  border-top: 1px solid var(--stone-150);
+}
+
+@media (min-width: 768px) {
+  .width-container {
+    margin: 2rem auto;
+    border-radius: 10px;
+  }
+
+  .main-content {
+    padding: 2rem;
+  }
+
+  .omlette-image {
+    border-radius: 10px;
+  }
+
+  .text-content {
+    padding: 0;
+  }
 }
