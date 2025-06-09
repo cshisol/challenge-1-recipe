@@ -1,4 +1,4 @@
-/* CSS RESET - https://www.joshwcomeau.com/css/custom-css-reset/ */
+/* --- CSS RESET - https://www.joshwcomeau.com/css/custom-css-reset/ --- */
 
 *,
 *::before,
@@ -56,4 +56,26 @@ h6 {
   isolation: isolate;
 }
 
-/* Page Styles */
+/* --- Fonts --- */
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets//fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Young-Serif";
+  src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* --- Page Styles --- */
+
+body {
+  font-family: "Outfit", "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
